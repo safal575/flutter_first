@@ -58,6 +58,62 @@ class _MyLoginState extends State<MyLogin> {
                         ),
                       ),
                     ),
+                    const SizedBox(
+                      height: 40,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: const [
+                        Text('Sign In', 
+                            style: TextStyle(
+                              color: Color(0xff4c505b),
+                              fontSize: 27, fontWeight: FontWeight.w700),
+                        ),
+                        // CircleAvatar(
+                        //   radius: 30,
+                        //   backgroundColor: Color(0xff4c505b),
+                        //   child: IconButton(
+                        //     color: Colors.white,
+                        //     onPressed: () {}, 
+                        //     icon: Icon(Icons.arrow_forward),
+                        //   ),
+                        // )
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 40,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children:  [
+                        TextButton(
+                          onPressed: () {
+                            Navigator.pushNamed(context, 'register');
+                          }, 
+                          child: const Text(
+                            'Sign Up', 
+                            style: TextStyle(
+                              decoration: TextDecoration.underline,
+                              fontSize: 18,
+                              color: Color(0xff4c505b),
+                          ),
+                          )
+                        ),
+                        TextButton(
+                          onPressed: (){
+                            Navigator.pushNamed(context, 'register');
+                          }, 
+                          child: const Text(
+                            'Forgot Password', 
+                            style: TextStyle(
+                              decoration: TextDecoration.underline,
+                              fontSize: 18,
+                              color: Color(0xff4c505b),
+                          ),
+                          )
+                        )
+                      ],
+                    ),
                   ],
                 ),
               )
